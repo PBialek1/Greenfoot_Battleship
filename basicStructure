@@ -11,7 +11,26 @@ for (int row=0; row<10; row++){
 //placement of ships
 
 //firing/hit registration
-greenfoot.ask("Input firing code")
+String firingcode = greenfoot.ask("Input firing code");
+int Ycode = parseInt(firingcode.substring(1,2));
+int Xcode = charToInt(firingcode.substring(0,1));
+
+
+
+//converts char to int
+public int charToInt(String input){
+    int output = 0;
+    switch(input.toLowerCase()) {
+        case "a": output = 1;
+            break;
+        case "b":
+    }
+}
+
+
+
+
+
 /* values for char array:
     e empty
     h hit
